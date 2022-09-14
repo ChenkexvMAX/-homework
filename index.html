@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简介</title>
+    <style>
+        body{
+            background-color: rgb(124, 102, 221)
+        }
+        .p-one{
+            width:320px;height:320px;text-align: center; background-color: rgb(58, 249, 185); border-radius:15px; opacity: 0.85;
+        }
+        .a{
+            position: relative;
+            perspective: 1600px;
+            top: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .b{
+            width: 400px;
+            height: 250px;
+            position: absolute;
+            transform-style: preserve-3d;
+            animation: a 8s infinite cubic-bezier(.7,0,.17,1);
+        }
+        .b div{
+            position: absolute;
+            background-size: cover;
+            opacity: .9;
+            width: 400px;
+            height: 250px;
+            transform: rotateY(calc(var(--i)*120deg)) translateZ(300px);
+        }
+        @keyframes a{
+            0%{
+                transform: translateZ(-100px) rotateY(0);
+            }
+            33%{
+                transform: translateZ(-100px) rotateY(-120deg);
+            }
+            66%{
+                transform: translateZ(-100px) rotateY(-240deg);
+            }
+            100%{
+                transform: translateZ(-100px) rotateY(-360deg);
+            }
+        }
+        .c{
+            background-image: url("images/DC1.jpg");
+        }
+        .d{
+            background-image: url("images/DC2.jpg");
+        }
+        .e{
+            background-image: url("images/DC3.jpg");
+        }
+        h2{
+            color: rgb(233, 37, 37);/*标签选择器*/
+        }
+        p{
+            text-align: center;
+        }
+        #p1{
+            color: rgb(56, 68, 243);/*id选择器*/
+        }
+        .p2{
+            color: rgb(156, 66, 240);/*类选择器*/
+        }
+        p > font{
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <div class="b">
+            <div class="c" style="--i:0"></div> 
+            <div class="d" style="--i:1"></div>
+            <div class="e" style="--i:2"></div>
+        </div>
+    </div>
+        <div style="position: absolute;margin-top: 35%;margin-left:40%;" class="p-one"> 
+        <table align="center">
+            <h2>自我介绍</h2><!--标签选择器-->
+            <p id="p1"><font color="white">姓名：</font>陈柯旭</p><!--id选择器-->
+            <p><font color="white">性别：</font>男的</p>
+            <p><font color="white">班级：</font>计科2012</p>
+            <p><font>学号：</font>20104011201</p>
+            <p><font>电话：</font>13281686591</p>
+            <p class="p2"><font>爱好：</font><a href="test2.html">学习(嘿嘿)</a></p><!--类选择器-->
+            <p><font>学号：</font>20104011201</p>
+        </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
