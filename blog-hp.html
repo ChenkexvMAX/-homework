@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bolg-hp</title>
+    <link rel="stylesheet" href="css/blog-hp.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <style>
+    /* 图片1 */
+.M:hover {
+    animation: bounce 1s;
+}
+
+.M-1 {
+    width: 700px;
+    height: 530px;
+    background: url(images/all-2.png);
+}
+
+.M-2 {
+    width: 700px;
+    height: 530px;
+    background: url(images/all-3.png);
+}
+
+.imglr:hover {
+    animation: flash 10s;
+}
+
+.img2:hover{
+    animation: bounce 1s;
+}
+
+
+
+/* banner区域 */
+
+.banner {
+    width: 100%;
+    height: 200px;
+}
+
+.bleach {
+    width: 1000px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+    /* footer 模块 */
+.footer-t {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: -webkit-radial-gradient(left, red, black);
+    text-align: center;
+}
+
+.h-0 {
+    position: absolute;
+    top: 50px;
+    right: 720px;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 3px gold;
+    font-size: 5em;
+}
+
+.banner_warp {
+    animation: banner 10s infinite;
+    perspective: 500px;
+    background: url("images/0-1.jpg") no-repeat center;
+}
+
+.banner2 {
+    width: 1200px;
+    height: 1000px;
+    margin: 0 auto;
+}
+
+@keyframes banner {
+    0% {
+        background: url("images/0-1.jpg") no-repeat center;
+    }
+    25% {
+        background: url("images/0-2.jpg") no-repeat center;
+    }
+    50% {
+        background: url("images/0-3.jpg") no-repeat center;
+    }
+    75% {
+        background: url("images/0-4.jpg") no-repeat center;
+    }
+    100% {
+        background: url("images/0-5.jpg") no-repeat center;
+    }
+}
+
+
+.box6 {
+    animation: bounce 5s;
+}
+    </style>
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <div class="header w">
+        <!-- logo部分 -->
+        <div class="logo">
+            <h2 class="name">CKX's blog</h2>
+        </div>
+    <!-- 导航栏部分 -->
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">主页</a></li>
+                <li><a href="resume.html">我的简历</a></li>
+                <li><a href="#13">十三番队</a></li>
+                <li><a href="#0">零番队</a></li>
+                <!-- <li><a href="#"></a></li> -->
+            </ul>
+        </div>
+        <div class="user">
+            <img src="images/dc3.jpg" alt="" class="img1">
+        </div>
+    </div>
+
+    <!-- banner -->
+    <div class="banner">
+        <div class="bleach"><img src="images/bleach-logo.png" alt=""></div>
+    </div>
+
+    <!-- 轮番图Swiper -->
+    <!-- Swiper -->
+    <div class="swiper mySwiper" id="sp">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/yh-2.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/yh-3.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/yh-1.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/xb-2.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/yl-1.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/zj-2.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/cdth.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/lky-3.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/nc-3.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/bbmm.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/nr-2.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/s4-3.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/s1-1.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/glmq-1.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/s3-3.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/so3-3.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/s2-3.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/x-0-1.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/x-1.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/x-2.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/x-6.jpg" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+  
+    
+    <!-- 过渡1  -->
+    <div class="middle"><h1 class="h-1" id="13">护廷十三番队</h1></div>
+
+
+    <div class="Main" id="ssf">
+        <div class="M-1"><img src="images/dh.jpg" alt="" class="imglr"></div>
+        <div class="M"><a href="./blog-rwjs.html#a1"><img src="images/b1.jpg" alt="" class="one"></a></div>
+        <div class="M-2"><img src="images/dh.jpg" alt="" class="imglr"></div>
+    </div>
+    <div class="main">
+        <span class="img2"><a href="blog-rwjs.html#a2"><img src="images/b2.jpg" alt=""></a></span>
+        <span class="img2"><a href="blog-rwjs.html#a3"><img src="images/b3.jpg" alt=""></a></span>
+        <span class="img2"><a href="blog-rwjs.html#a4"><img src="images/b4.jpg" alt=""></a></span>
+        <span class="img2"><a href="blog-rwjs.html#a5"><img src="images/b5.jpg" alt=""></a></span>
+        <span class="img2"><a href="blog-rwjs.html#a6"><img src="images/b6.jpg" alt=""></a></span>
+        <span class="img2"><a href="blog-rwjs.html#a7"><img src="images/b7.jpg" alt=""></a></span>
+        <span class="img2"><a href="blog-rwjs.html#a8"><img src="images/b8.jpg" alt=""></a></span>
+        <span class="img2"><a href="blog-rwjs.html#a9"><img src="images/b9.jpg" alt=""></a></span>
+        <span class="img2"><a href="blog-rwjs.html#a10"><img src="images/b10.jpg" alt=""></a></span>
+        <span class="img2"><a href="blog-rwjs.html#a11"><img src="images/b11.jpg" alt=""></a></span>
+        <span class="img2"><a href="blog-rwjs.html#a12"><img src="images/b12.jpg" alt=""></a></span>
+        <span class="img2"><a href="blog-rwjs.html#a13"><img src="images/b13.jpg" alt=""></a></span>    
+    </div> 
+
+    <!-- 5. footer 模块制作 -->
+    <div class="footer-t">
+        <h1 class="h-0" id="0">零番队</h1>
+    </div>
+    <div class="banner_warp">
+        <div class="banner2"></div>
+    </div>
+    <div class="box6"></div>
+    </div>
+
+    <div class="footer-end">
+        <div class="f-1"><img src="images/blogo.png" alt=""></div>
+        <div class="f-2">
+            <h1 class="f-h">卍解</h1>
+            <p class="f-p">谨此！纪念《BLEACH》</p>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+</body>
+</html>

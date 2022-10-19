@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(252,214,220);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+
+.father {
+    position: relative;
+    width: 1000px;
+    height: 800px;
+    margin: 10px auto;
+    background-color: red;
+}
+
+.son1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 400px;
+    height: 800px;
+    background-color: pink;
+}
+
+.son2 {
+    position: absolute;
+    top: 0px;
+    left: 400px;
+    width: 600px;
+    height: 800px;
+    background-color: skyblue;
+}
+
+.son3 {
+    position: absolute;
+    top: 350px;
+    left: 400px;
+    width: 600px;
+    height: 450px;
+    background-color: skyblue;    
+    overflow: hidden;
+}
+
+.son3 h2 {
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    color: black;
+    font-size: 2em;
+}
+
+.son3 ul {
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    font-size: 20px;
+}
+
+.son3 ul li {
+    margin: 50px auto;
+}
+
+.img1 {
+    border-radius: 50%;
+}
+
+.ul1 {
+    position: absolute;
+    top: 360px;
+    left: 135px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.ul1 h2 {
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 3px black;
+    font-size: 2em;
+}
+
+.ul1 li {
+    margin: 10px auto;
+    font-size: 20px;
+    text-align: left;
+    color: white;
+} 
+
+.p {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 200px;
+    height: 350px;
+    /* background-color: goldenrod; */
+    font-size: 36px;
+    font-weight: bold;  
+}
+
+.ps1 {
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    display: block;
+    width: 2px;
+    height: 320px;
+    background-color: black;
+}
+
+.p1 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    writing-mode: tb-rl;
+}
+
+.p2 {
+    position: absolute;
+    top: 10px;
+    left: 80px;
+    overflow: hidden;
+}
+.p2 li {
+    margin: 20px auto;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.return {
+    position: absolute;
+    top: 630px;
+    left: 150px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: -webkit-radial-gradient(right, pink, skyblue);
+    text-align: center;
+}
+
+.return font {
+    display: block;
+    margin: 35px auto;
+    font-weight: bold;
+}
+
+</style>
+</head>
+<body vlink="red">
+    <div class="father">
+        <div class="son1">
+            <img src="images/dc1.jpg" alt="" class="img1">
+            <ul class="ul1">
+                <h2>自我介绍</h2>
+                <li><p><font style="font-weight: bold;">姓名：</font>陈柯旭</p></li>
+                <li><p><font style="font-weight: bold;">性别：</font>男</p></li>
+                <li><p><font style="font-weight: bold;">班级：</font>计科2012</p></li>
+            </ul>
+        </div>
+
+        <div class="son2">
+            <span class="p">
+                <span class="ps1"></span>
+                <p class="p1">关于<font style="color: red;">作品</font></p>  
+            </span>
+            <ul class="p2">
+                <li>1、本次作业大部分页面主要使用CSS进行页面布局排版。其中大部分是由position进行布局，以及简单的css样式美化。</li>
+                <li>2、本次作品使用了Swiper、animate插件，进行页面美化。</li>
+                <li>3、本次作品在主页面运用到了transform进行两个盒子的翻转，以及前面课程学习到的Javascript实验案例。</li>
+                <li>4、在其他几个页面上，主要以flex、position对页面进行布局。其中在作品的主要页面之一<a href="blog-hp.html">blog-hp</a>页面上主要运用了flex布局。在<a href="blog-rwjs.html">blog-rwjs</a>页面使用了position进行定位布局，粘性定位(sticky)以及网格布局(grid)。</li>
+                <li>5、在该作品的页面上，因为作者的对Javascript相关知识不够深入与熟练，所以没有使用太多。这也是后面主要的学习方向。最大的缺点是图片使用过多！加载慢！</li>
+            </ul>
+        </div>
+
+        <div class="son3">
+            <h2><font style="color: white;">ABOUT</font> <font style="color: red;">ME</font></h2>
+            <ul>
+                <li>我的兴趣：动漫、美食、音乐、bodybuilding(就只是看看人家的mucle)...</li>
+                <li>联系方式：QQ：1600643054@qq.com</br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Tel：18828929690</li>
+                <li>PS：图片太多，页面加载可能很慢。( ;︵; )</li>
+            </ul>
+        </div>
+        <div class="return"><a href="index.html"><font style="color: white;">HOME</font></a></div>
+    </div>
+</body>
+</html>

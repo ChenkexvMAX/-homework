@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>characters-intro</title>
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/rwjs.css">
+    <style>
+        /* 动画切换 */
+.imgb:hover {
+    animation: flash 10s;
+}
+
+.b1 {
+    width: 700px;
+    height: 4500px;
+    background: url(images/b1-3.jpg);
+}
+.b2 {
+    width: 700px;
+    height: 530px;
+    background: url(images/b2-1.jpg);
+}
+.b3 {
+    width: 700px;
+    height: 530px;
+    background: url(images/b3-2.jpg);
+}
+.b4 {
+    width: 700px;
+    height: 530px;
+    background: url(images/b4-3.jpg);
+}
+.b5 {
+    width: 700px;
+    height: 530px;
+    background: url(images/b5-9.jpg);
+}
+.b6 {
+    width: 700px;
+    height: 530px;
+    background: url(images/b6-1.jpg);
+}
+.b7 {
+    width: 700px;
+    height: 530px;
+    background: url(images/b7-3.jpg);
+}
+.b8 {
+    width: 700px;
+    height: 530px;
+    background: url(images/b8-2.jpg);
+}
+.b9 {
+    width: 700px;
+    height: 530px;
+    background: url(images/b9-2.jpg);
+}
+.b10 {
+    width: 700px;
+    height: 530px;
+    background: url(images/b10-3.jpg);
+}
+.b11 {
+    width: 700px;
+    height: 530px;
+    background: url(images/b11-3.jpg);
+}
+.b12 {
+    width: 700px;
+    height: 530px;
+    background: url(images/b12-3.jpg);
+}
+.b13 {
+    width: 700px;
+    height: 530px;
+    background: url(images/b13-3.jpg);
+}
+
+/* 下拉菜单 */
+/* 一护导航 */
+.sreach {
+    position: sticky;
+    top: 0px;
+    width: 0px;
+    height: 0px;
+}
+
+.nav {
+    width: 500px; 
+    margin: 1px 50px;
+    display: flex;
+    position: sticky;
+    top: 0px;
+}
+
+ul {
+    list-style: none; 
+    margin: 0;  
+    padding: 0;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px; 
+    color: white; 
+    background: #0c0c0c;
+    border-radius: 1%;
+}
+
+ul li a.menu {
+    background: #000000; 
+}
+
+.drop-down {
+    width: 100px;
+    height: 50px;
+    margin-right: 30px;
+}
+
+.drop-down-content {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 1s ease;
+
+}
+
+.drop-down-content li:hover a {
+    background: -webkit-radial-gradient(left, red, black);
+}
+
+.nav .drop-down:hover .drop-down-content {
+    opacity: 1;
+    height: 200px;
+}
+    </style>
+</head>
+<body>
+    <!-- 顶部 -->
+    <div class="header" id="db-0">
+        <h1 class="h1-1">
+            人&nbsp&nbsp&nbsp物&nbsp&nbsp&nbsp介&nbsp&nbsp&nbsp绍
+        </h1>
+    </div>
+
+    <!-- 导航部分 -->
+    <div class="sreach">
+        <img src="images/blogo.png" alt="">
+        <ul class="nav">
+            <li class="drop-down"><a class="menu" href="#">导&nbsp&nbsp&nbsp航</a> 
+        <ul class="drop-down-content">  
+            <li><a href="blog-hp.html">返回主页</a></li>
+            <li><a href="blog-hp.html#ssf">十三番队</a></li>
+            <li><a href="#db-0">回到顶部</a></li>
+            <li><a href="#db-1">回到底部</a></li>
+        </ul>
+    </div>
+
+    <!-- 中部 -->
+    <div class="middle">
+        <div class="b1" id="a1"><img src="images/b1-1.jpg" alt="" class="imgb"></div>
+         <span class="p1">
+            <span class="ps-1"></span>
+            <p class="p1-2">山本元柳斋重国</p>  
+        </span>
+        <span class="p1-1">
+            <p>番队：一番队</p>
+            <p>职务：一番队队长、护廷十三番队总队长、千年最强</p>
+            <p>队徽：菊花</p>
+            <p>斩魄刀：流刃若火</p>
+            <p>解放语：森罗万象，皆为灰烬，流刃若火！</p>
+            <p>卍解：残火太刀</p>
+        </span>
+        
+        <div class="b2" id="a2"><img src="images/b2-3.jpg" alt="" class="imgb"></div>
+        <span class="p2">
+            <span class="ps-1"></span>
+            <p class="p1-2">碎蜂</p>  
+        </span>
+        <span class="p1-1">
+            <p>番队：二番队</p>
+            <p>职务：二番队队长、隐密机动总司令官、</br>隐密机动第一分队“刑军”总括军团长</p>
+            <p>队徽：翁草</p>
+            <p>斩魄刀：雀蜂</p>
+            <p>解放语：尽敌螫杀！雀蜂！</p>
+            <p>卍解：雀蜂雷公鞭</p>
+        </span>
+
+        <div class="b3" id="a3"><img src="images/b3-1.jpg" alt="" class="imgb"></div>
+        <span class="p3">
+            <span class="ps-1"></span>
+            <p class="p1-2">市丸银</p>  
+        </span>
+        <span class="p1-1">
+            <p>番队：三番队</p>
+            <p>职务：三番队队长、支援部队队长</p>
+            <p>队徽：金盏花</p>
+            <p>斩魄刀：神枪</p>
+            <p>解放语：射杀他！神枪！</p>
+            <p>卍解：神杀枪</p>
+        </span>
+
+        <div class="b4" id="a4"><img src="images/b4-1.jpg" alt="" class="imgb"></div>
+        <span class="p4">
+            <span class="ps-1"></span>
+            <p class="p1-2">卯之花烈</p>  
+        </span>
+        <span class="p1-1">
+            <p>番队：四番队</p>
+            <p>职务：四番队队长、医疗部队队长、初代剑八(卯之花烈八千流)</p>
+            <p>队徽：龙胆</p>
+            <p>斩魄刀：肉雫唼</p>
+            <p>解放语：？？？</p>
+            <p>卍解：皆尽</p>
+        </span>
+
+        <div class="b5" id="a5"><img src="images/b5-6.jpg" alt="" class="imgb"></div>
+        <span class="p5">
+            <span class="ps-1"></span>
+            <p class="p1-2">蓝染惣右介</p>  
+        </span>
+        <span class="p1-1">
+            <p>番队：五番队</p>
+            <p>职务：五番队队长、救援部队队长、“神”</p>
+            <p>队徽：马醉木</p>
+            <p>斩魄刀：镜花水月</p>
+            <p>解放语：碎裂吧，镜花水月、？？？</p>
+            <p>卍解：？？？</p>
+        </span>
+
+        <div class="b6" id="a6"><img src="images/b6-2.jpg" alt="" class="imgb"></div>
+        <span class="p6">
+            <span class="ps-1"></span>
+            <p class="p1-2">朽木白哉</p>  
+        </span>
+        <span class="p1-1">
+            <p>番队：六番队</p>
+            <p>职务：六番队队长、贵族统领部队队长、四大贵族之一朽木家家主</p>
+            <p>队徽：椿</p>
+            <p>斩魄刀：千本樱</p>
+            <p>解放语：散落吧！千本樱</p>
+            <p>卍解：千本樱景严</p>
+        </span>
+
+        <div class="b7" id="a7"><img src="images/b7-1.jpg" alt="" class="imgb"></div>
+        <span class="p7">
+            <span class="ps-1"></span>
+            <p class="p1-2">泊村左阵</p>  
+        </span>
+        <span class="p1-1">
+            <p>番队：七番队</p>
+            <p>职务：七番队队长、内廷护卫队队长、人狼一族</p>
+            <p>队徽：菖蒲</p>
+            <p>斩魄刀：天谴</p>
+            <p>解放语：轰鸣吧，天谴！</p>
+            <p>卍解：黑绳天谴明王-黑绳天谴明王·断铠绳衣</p>
+        </span>
+        
+        <div class="b8" id="a8"><img src="images/b8-1.jpg" alt="" class="imgb"></div>
+        <span class="p8">
+            <span class="ps-1"></span>
+            <p class="p1-2">京乐春水</p>  
+        </span>
+        <span class="p1-1">
+            <p>番队：八番队</p>
+            <p>职务：八番队队长、情报部队队长、千年血战-总队长/一番队队长</p>
+            <p>队徽：极乐花鸟</p>
+            <p>斩魄刀：花天狂骨</p>
+            <p>解放语：花风絮乱，花神啼鸣，天风繁乱，天魔嗤笑，花天狂骨</p>
+            <p>卍解：花天狂骨·黑松心中</p>
+        </span>
+
+        <div class="b9" id="a9"><img src="images/b9-1.jpg" alt="" class="imgb"></div>
+        <span class="p9">
+            <span class="ps-1"></span>
+            <p class="p1-2">东仙要</p>  
+        </span>
+        <span class="p1-1">
+            <p>番队：九番队</p>
+            <p>职务：九番队队长、牢狱部队队长</p>
+            <p>队徽：白罂</p>
+            <p>斩魄刀：清虫</p>
+            <p>解放语：鸣叫吧！清虫！</p>
+            <p>卍解：清虫终式·阎魔蟋蟀</br>归刃语：清虫百式，狂伽蟋蟀！</p>
+        </span>
+
+        <div class="b10" id="a10"><img src="images/b10-1.jpg" alt="" class="imgb"></div>
+        <span class="p10">
+            <span class="ps-1"></span>
+            <p class="p1-2">日番谷冬狮郎</p>  
+        </span>
+        <span class="p1-1">
+            <p>番队：十番队</p>
+            <p>职务：十番队队长、巡逻警备队队长</p>
+            <p>队徽：水仙花</p>
+            <p>斩魄刀：冰轮丸</p>
+            <p>解放语：端坐于霜天吧，冰轮丸！！！</p>
+            <p>卍解：大红莲冰轮丸</p>
+        </span>
+
+        <div class="b11" id="a11"><img src="images/b11-1.jpg" alt="" class="imgb"></div>
+        <span class="p11">
+            <span class="ps-1"></span>
+            <p class="p1-2">更木剑八</p>  
+        </span>
+        <span class="p1-1">
+            <p>番队：十一番队</p>
+            <p>职务：十一番队队长、护廷十三番队总队长</p>
+            <p>队徽：锯齿草</p>
+            <p>斩魄刀：野晒</p>
+            <p>解放语：吞噬吧，野晒</p>
+            <p>卍解：？？？(名字不详)</p>
+        </span>
+
+        <div class="b12" id="a12"><img src="images/b12-1.jpg" alt="" class="imgb"></div>
+        <span class="p12">
+            <span class="ps-1"></span>
+            <p class="p1-2">涅茧利</p>  
+        </span>
+        <span class="p1-1">
+            <p>番队：十二番队</p>
+            <p>职务：十二番队队长、第二代技术开发局局长</p>
+            <p>队徽：蓟</p>
+            <p>斩魄刀：疋杀地藏</p>
+            <p>解放语：张开你的爪子吧，疋杀地藏</p>
+            <p>卍解：金色疋杀地藏</p>
+        </span>
+
+        <div class="b13" id="a13"><img src="images/b13-1.jpg" alt=""  class="imgb"></div>
+        <span class="p13">
+            <span class="ps-1"></span>
+            <p class="p1-2">浮竹十四郎</p>  
+        </span>
+        <span class="p1-1">
+            <p>番队：十三番队</p>
+            <p>职务：十三番队队长、护净化部队队长、天才、灵王的右手</p>
+            <p>队徽：雪草</p>
+            <p>斩魄刀：双鱼鲤</p>
+            <p>解放语：悉数流波、化为吾盾，悉数雷光、化为吾刃；双鱼理！</p>
+            <p>卍解：？？？</p>
+        </span>
+
+    </div>
+
+    <!-- footer -->
+    <div class="footer" id="pg">
+    </div>
+    <div class="father" id="db-1">
+        <div class="p" style="background: pink;"><img src="images/x-3.jpg" alt=""></div>
+        <div class="p" style="background: red;"><img src="images/x-5.jpg" alt=""></div>
+        <div class="p" style="background: skyblue;"><img src="images/x-yl.jpg" alt=""></div>
+        <div class="p" style="background: yellowgreen;"><img src="images/x-4.jpg" alt=""></div>
+        <div class="p" style="background: orange;"><img src="images/x-2.jpg" alt=""></div>
+        <div class="p" style="background: orchid;"><img src="images/x-0-1.jpg" alt=""></div>
+        <div class="p" style="background: gray;"><img src="images/x-6.jpg" alt=""></div>
+        <div class="p" style="background: gold;"><img src="images/x-1.jpg" alt=""></div>
+        <div class="p" style="background: -webkit-radial-gradient(right, rgb(240, 236, 236), rgb(24, 113, 222));">
+            <h1 class="h1-2">星十字骑士团</h1>
+        </div>
+    </div>
+</body>
+</html>
